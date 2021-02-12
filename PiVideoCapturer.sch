@@ -1,0 +1,1836 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 1170 695  0    50   Input ~ 0
+HDMI1_D2_P
+Text GLabel 1170 795  0    50   Input ~ 0
+HDMI1_D2_N
+Text GLabel 1170 895  0    50   Input ~ 0
+HDMI1_D1_P
+Text GLabel 1170 995  0    50   Input ~ 0
+HDMI1_D1_N
+NoConn ~ 2520 1995
+$Comp
+L power:GND #PWR04
+U 1 1 6021D393
+P 2395 3045
+F 0 "#PWR04" H 2395 2795 50  0001 C CNN
+F 1 "GND" H 2400 2872 50  0000 C CNN
+F 2 "" H 2395 3045 50  0001 C CNN
+F 3 "" H 2395 3045 50  0001 C CNN
+	1    2395 3045
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2395 795  2520 795 
+Wire Wire Line
+	2520 1095 2395 1095
+Connection ~ 2395 1095
+Wire Wire Line
+	2520 1395 2395 1395
+Connection ~ 2395 1395
+Wire Wire Line
+	2395 1395 2395 1095
+Wire Wire Line
+	2520 1695 2395 1695
+Connection ~ 2395 1695
+Wire Wire Line
+	2395 1395 2395 1695
+Wire Wire Line
+	2520 2295 2395 2295
+Connection ~ 2395 2295
+Wire Wire Line
+	2395 2295 2395 1995
+Wire Wire Line
+	2520 1295 2070 1295
+Wire Wire Line
+	2070 1295 2070 1620
+Wire Wire Line
+	2520 1495 2145 1495
+Wire Wire Line
+	2145 1495 2145 1720
+Wire Wire Line
+	2520 1595 2220 1595
+Wire Wire Line
+	2220 1595 2220 1820
+Wire Wire Line
+	2520 1795 2295 1795
+Wire Wire Line
+	2295 1795 2295 1920
+Wire Wire Line
+	2520 1895 2345 1895
+Wire Wire Line
+	2520 2095 2445 2095
+Wire Wire Line
+	2520 2195 2495 2195
+Text Notes 3110 2625 1    197  ~ 0
+HDMI input
+Wire Wire Line
+	2520 2395 2445 2395
+Wire Wire Line
+	2445 2395 2445 2870
+Wire Wire Line
+	2345 895  2345 795 
+Wire Wire Line
+	2520 995  2295 995 
+Wire Wire Line
+	2295 995  2295 895 
+Wire Wire Line
+	2520 1195 2220 1195
+Wire Wire Line
+	2220 1195 2220 995 
+Wire Wire Line
+	2395 1395 1820 1395
+Wire Wire Line
+	1820 1395 1820 1445
+Wire Wire Line
+	2395 1995 1995 1995
+Wire Wire Line
+	1995 1995 1995 2370
+Connection ~ 2395 1995
+Wire Wire Line
+	2395 1995 2395 1695
+Wire Wire Line
+	2345 1895 2345 2095
+Wire Wire Line
+	2345 2095 2095 2095
+Wire Wire Line
+	2095 2095 2095 2545
+Wire Wire Line
+	2445 2170 2170 2170
+Wire Wire Line
+	2170 2170 2170 2645
+Wire Wire Line
+	2445 2095 2445 2170
+Wire Wire Line
+	2495 2195 2495 2245
+Wire Wire Line
+	2495 2245 2245 2245
+Wire Wire Line
+	2245 2245 2245 2745
+Wire Wire Line
+	2520 2495 2295 2495
+Wire Wire Line
+	2395 2695 2520 2695
+Wire Wire Line
+	2395 2295 2395 2695
+Wire Wire Line
+	2395 2695 2395 3045
+Connection ~ 2395 2695
+Connection ~ 2395 3045
+Wire Wire Line
+	2395 3045 2395 3295
+$Comp
+L power:+5VA #PWR0103
+U 1 1 60387FC2
+P 2795 3020
+F 0 "#PWR0103" H 2795 2870 50  0001 C CNN
+F 1 "+5VA" V 2810 3148 50  0000 L CNN
+F 2 "" H 2795 3020 50  0001 C CNN
+F 3 "" H 2795 3020 50  0001 C CNN
+	1    2795 3020
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2445 2870 2795 2870
+Wire Wire Line
+	2795 2870 2795 2945
+Text GLabel 1095 2745 0    50   Input ~ 0
+HDMI1_SDA
+Text GLabel 1095 2645 0    50   Input ~ 0
+HDMI1_SCL
+Text GLabel 1095 2545 0    50   Input ~ 0
+HDMI1_CEC
+Wire Notes Line
+	520  525  3440 525 
+Wire Notes Line
+	3440 525  3440 3365
+Wire Notes Line
+	3440 3365 520  3365
+Wire Notes Line
+	519  3360 519  520 
+Text GLabel 1005 2845 0    50   Input ~ 0
+HDMI1_HPD
+$Comp
+L Device:R R11
+U 1 1 604186FC
+P 1155 2845
+F 0 "R11" V 948 2845 50  0001 C CNN
+F 1 "1K" V 1155 2845 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1085 2845 50  0001 C CNN
+F 3 "~" H 1155 2845 50  0001 C CNN
+F 4 "C11702" V 1155 2845 50  0001 C CNN "SuppliersPartNumber"
+	1    1155 2845
+	0    1    1    0   
+$EndComp
+Text Notes 9373 6425 2    197  ~ 0
+48MHz clock
+$Comp
+L power:GND #PWR05
+U 1 1 6024844F
+P 8077 6154
+F 0 "#PWR05" H 8077 5904 50  0001 C CNN
+F 1 "GND" V 8082 6026 50  0000 R CNN
+F 2 "" H 8077 6154 50  0001 C CNN
+F 3 "" H 8077 6154 50  0001 C CNN
+	1    8077 6154
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR02
+U 1 1 60285F00
+P 8077 5084
+F 0 "#PWR02" H 8077 4934 50  0001 C CNN
+F 1 "+3.3V" H 8092 5257 50  0000 C CNN
+F 2 "" H 8077 5084 50  0001 C CNN
+F 3 "" H 8077 5084 50  0001 C CNN
+	1    8077 5084
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 60286B2F
+P 7717 5284
+F 0 "C1" V 7465 5284 50  0000 C CNN
+F 1 "20pF" V 7556 5284 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7755 5134 50  0001 C CNN
+F 3 "~" H 7717 5284 50  0001 C CNN
+F 4 "C1648" V 7717 5284 50  0001 C CNN "SuppliersPartNumber"
+	1    7717 5284
+	0    1    1    0   
+$EndComp
+Text GLabel 8657 5784 2    50   Input ~ 0
+CLK_48MHz
+Wire Wire Line
+	7567 5284 7567 6154
+Wire Wire Line
+	7567 6154 8077 6154
+Connection ~ 8077 6154
+Wire Wire Line
+	8077 6154 8077 6084
+Wire Wire Line
+	7867 5284 8077 5284
+Connection ~ 8077 5284
+Wire Wire Line
+	8077 5284 8077 5084
+Text Notes 640  4580 0    197  ~ 0
+I2S audio
+$Comp
+L power:GND #PWR0107
+U 1 1 61C82C3C
+P 1540 3550
+F 0 "#PWR0107" H 1540 3300 50  0001 C CNN
+F 1 "GND" V 1545 3422 50  0000 R CNN
+F 2 "" H 1540 3550 50  0001 C CNN
+F 3 "" H 1540 3550 50  0001 C CNN
+	1    1540 3550
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	2550 4630 2550 3410
+Wire Notes Line
+	2550 3410 520  3410
+Wire Wire Line
+	8377 5784 8657 5784
+Text GLabel 1540 4250 0    50   Input ~ 0
+HDMI1_A_OSCK
+Text GLabel 1540 4150 0    50   Input ~ 0
+HDMI1_A_SD0
+Text GLabel 1540 4050 0    50   Input ~ 0
+HDMI1_A_SD1
+Text GLabel 1540 3950 0    50   Input ~ 0
+HDMI1_A_SD2
+Text GLabel 1540 3850 0    50   Input ~ 0
+HDMI1_A_SD3
+Text GLabel 1540 3750 0    50   Input ~ 0
+HDMI1_A_WFS
+Text GLabel 1540 3650 0    50   Input ~ 0
+HDMI1_A_SCK
+Wire Notes Line
+	520  3410 520  4630
+Wire Notes Line
+	520  4630 2550 4630
+Wire Wire Line
+	8077 5484 8077 5284
+$Comp
+L pi_video_capturer:YSX321SL X1
+U 1 1 620E8CBA
+P 8077 5784
+F 0 "X1" H 7734 5830 50  0000 R CNN
+F 1 "SG-310SCF" H 8605 6064 50  0000 R CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 8527 5434 50  0001 C CNN
+F 3 "" H 7977 5784 50  0001 C CNN
+F 4 "C32533" H 8077 5784 50  0001 C CNN "SuppliersPartNumber"
+	1    8077 5784
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 6217A746
+P 2795 2945
+F 0 "#FLG0101" H 2795 3020 50  0001 C CNN
+F 1 "PWR_FLAG" V 2795 3073 50  0000 L CNN
+F 2 "" H 2795 2945 50  0001 C CNN
+F 3 "~" H 2795 2945 50  0001 C CNN
+	1    2795 2945
+	0    1    1    0   
+$EndComp
+Connection ~ 2795 2945
+Wire Wire Line
+	2795 2945 2795 3020
+$Comp
+L Device:R R12
+U 1 1 6033A2A6
+P 1425 3025
+F 0 "R12" H 1495 3071 50  0001 L CNN
+F 1 "47k" V 1425 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1355 3025 50  0001 C CNN
+F 3 "~" H 1425 3025 50  0001 C CNN
+F 4 "C25792" H 1425 3025 50  0001 C CNN "SuppliersPartNumber"
+	1    1425 3025
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5VA #PWR0108
+U 1 1 624D22E2
+P 1290 3265
+F 0 "#PWR0108" H 1290 3115 50  0001 C CNN
+F 1 "+5VA" V 1305 3392 50  0000 L CNN
+F 2 "" H 1290 3265 50  0001 C CNN
+F 3 "" H 1290 3265 50  0001 C CNN
+	1    1290 3265
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2395 1095 2395 795 
+Wire Wire Line
+	2520 895  2345 895 
+Wire Wire Line
+	8976 1996 8961 1996
+Wire Wire Line
+	6456 4505 6456 4420
+Connection ~ 6456 4505
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6218384E
+P 6456 4505
+F 0 "#FLG0102" H 6456 4580 50  0001 C CNN
+F 1 "PWR_FLAG" V 6456 4633 50  0000 L CNN
+F 2 "" H 6456 4505 50  0001 C CNN
+F 3 "~" H 6456 4505 50  0001 C CNN
+	1    6456 4505
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6246 4420 6456 4420
+$Comp
+L Device:C_Small C5
+U 1 1 604FF6C1
+P 4596 4270
+F 0 "C5" H 4516 4340 50  0000 L CNN
+F 1 "0.1uF" H 4496 4280 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4596 4270 50  0001 C CNN
+F 3 "~" H 4596 4270 50  0001 C CNN
+F 4 "C1525" H 4596 4270 50  0001 C CNN "SuppliersPartNumber"
+	1    4596 4270
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8961 2196
+Wire Wire Line
+	8011 2096 8161 2096
+Wire Wire Line
+	8161 1896 8031 1896
+Text GLabel 8011 2096 0    50   Input ~ 0
+HDMI1_RST
+Text GLabel 8031 1896 0    50   Input ~ 0
+HDMI1_I2C_SCL
+Text GLabel 8976 1996 2    50   Input ~ 0
+HDMI1_I2C_SDA
+Wire Wire Line
+	5116 1500 5116 1570
+Wire Wire Line
+	5016 1500 5016 1570
+Wire Wire Line
+	4916 1500 4916 1570
+Text GLabel 5116 1500 1    50   Input ~ 0
+HDMI1_I2C_SCL
+Text GLabel 5016 1500 1    50   Input ~ 0
+HDMI1_I2C_SDA
+Text GLabel 4916 1500 1    50   Input ~ 0
+HDMI1_RST
+NoConn ~ 10541 2201
+NoConn ~ 9741 2101
+NoConn ~ 9741 1901
+NoConn ~ 10541 2001
+Wire Wire Line
+	10541 2601 10611 2601
+Wire Wire Line
+	10541 3001 10681 3001
+Wire Wire Line
+	10541 3201 10681 3201
+Wire Wire Line
+	10541 3601 10671 3601
+Wire Wire Line
+	10541 3801 10651 3801
+Wire Wire Line
+	9741 3901 9601 3901
+Wire Wire Line
+	9741 3501 9611 3501
+Wire Wire Line
+	9741 3301 9611 3301
+Wire Wire Line
+	9611 2901 9741 2901
+Wire Wire Line
+	9621 2701 9741 2701
+Wire Wire Line
+	9091 2596 8961 2596
+Wire Wire Line
+	9121 2996 8961 2996
+Wire Wire Line
+	9131 3196 8961 3196
+Wire Wire Line
+	8961 3596 9121 3596
+Wire Wire Line
+	8961 3796 9131 3796
+Wire Wire Line
+	8001 3896 8161 3896
+Text GLabel 8001 3896 0    50   Input ~ 0
+MIPI0_D0_N
+Wire Wire Line
+	7991 3496 8161 3496
+Wire Wire Line
+	8001 3296 8161 3296
+Wire Wire Line
+	8011 2896 8161 2896
+Wire Wire Line
+	8011 2696 8161 2696
+NoConn ~ 10541 2401
+NoConn ~ 8961 2396
+Text Notes 9861 4321 0    118  ~ 0
+MIPI 2
+NoConn ~ 10541 1601
+NoConn ~ 10541 1801
+NoConn ~ 9741 1701
+NoConn ~ 9741 1501
+NoConn ~ 8961 1796
+NoConn ~ 8161 1696
+NoConn ~ 8161 1496
+NoConn ~ 8961 1396
+Connection ~ 10621 3401
+Wire Wire Line
+	10621 2801 10541 2801
+Wire Wire Line
+	10621 3401 10621 2801
+Connection ~ 10621 4001
+Wire Wire Line
+	10621 3401 10541 3401
+Wire Wire Line
+	10621 4001 10621 3401
+Wire Wire Line
+	10621 4001 10541 4001
+Wire Wire Line
+	9651 4341 10621 4341
+Connection ~ 9651 2301
+Wire Wire Line
+	9651 1301 9741 1301
+Wire Wire Line
+	9651 2301 9651 1301
+Connection ~ 9651 2501
+Wire Wire Line
+	9651 2301 9741 2301
+Wire Wire Line
+	9651 2501 9651 2301
+Connection ~ 9651 3101
+Wire Wire Line
+	9651 2501 9741 2501
+Wire Wire Line
+	9651 3101 9651 2501
+Connection ~ 9651 3701
+Wire Wire Line
+	9651 3101 9741 3101
+Wire Wire Line
+	9651 3701 9651 3101
+Wire Wire Line
+	9651 3701 9741 3701
+Wire Wire Line
+	9651 4341 9651 3701
+$Comp
+L pi_video_capturer:MIPI_30PIN J4
+U 1 1 610A5EE4
+P 10141 2401
+F 0 "J4" V 8574 2401 50  0000 C CNN
+F 1 "MIPI_30PIN" V 8665 2401 50  0000 C CNN
+F 2 "pi_video_capturer:MIPI_30PIN_FPC_0.5mm" H 10141 2401 50  0001 L BNN
+F 3 "" H 10141 2401 50  0001 L BNN
+F 4 "N/A" V 10141 2401 50  0001 C CNN "SuppliersPartNumber"
+	1    10141 2401
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 6107FF44
+P 7761 4336
+F 0 "#PWR0106" H 7761 4086 50  0001 C CNN
+F 1 "GND" V 7766 4208 50  0000 R CNN
+F 2 "" H 7761 4336 50  0001 C CNN
+F 3 "" H 7761 4336 50  0001 C CNN
+	1    7761 4336
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7761 4336 8071 4336
+Connection ~ 9041 3396
+Wire Wire Line
+	9041 2796 8961 2796
+Wire Wire Line
+	9041 3396 9041 2796
+Connection ~ 9041 3996
+Wire Wire Line
+	9041 3396 8961 3396
+Wire Wire Line
+	9041 3996 9041 3396
+Connection ~ 8071 4336
+Wire Wire Line
+	9041 3996 8961 3996
+Wire Wire Line
+	8071 4336 9041 4336
+Connection ~ 8071 2296
+Wire Wire Line
+	8071 1296 8161 1296
+Wire Wire Line
+	8071 2296 8071 1296
+Connection ~ 8071 2496
+Wire Wire Line
+	8071 2296 8161 2296
+Wire Wire Line
+	8071 2496 8071 2296
+Connection ~ 8071 3096
+Wire Wire Line
+	8071 2496 8161 2496
+Wire Wire Line
+	8071 3096 8071 2496
+Connection ~ 8071 3696
+Wire Wire Line
+	8071 3096 8161 3096
+Wire Wire Line
+	8071 3696 8071 3096
+Wire Wire Line
+	8071 3696 8161 3696
+Wire Wire Line
+	8071 4336 8071 3696
+Wire Wire Line
+	8961 786  8961 1196
+Connection ~ 8161 786 
+Wire Wire Line
+	8161 786  8961 786 
+Wire Wire Line
+	8161 786  7901 786 
+Wire Wire Line
+	8161 1096 8161 786 
+Text GLabel 10671 3601 2    50   Input ~ 0
+MIPI1_CL_N
+Text GLabel 9611 3501 0    50   Input ~ 0
+MIPI1_CL_P
+Text GLabel 10651 3801 2    50   Input ~ 0
+MIPI1_D0_P
+Text GLabel 9601 3901 0    50   Input ~ 0
+MIPI1_D0_N
+Text GLabel 10681 3201 2    50   Input ~ 0
+MIPI1_D1_P
+Text GLabel 9611 3301 0    50   Input ~ 0
+MIPI1_D1_N
+Text GLabel 10681 3001 2    50   Input ~ 0
+MIPI1_D2_N
+Text GLabel 9611 2901 0    50   Input ~ 0
+MIPI1_D2_P
+Text GLabel 10611 2601 2    50   Input ~ 0
+MIPI1_D3_P
+Text GLabel 9621 2701 0    50   Input ~ 0
+MIPI1_D3_N
+Text GLabel 9121 3596 2    50   Input ~ 0
+MIPI0_CL_N
+Text GLabel 7991 3496 0    50   Input ~ 0
+MIPI0_CL_P
+Text GLabel 9131 3796 2    50   Input ~ 0
+MIPI0_D0_P
+Text GLabel 9131 3196 2    50   Input ~ 0
+MIPI0_D1_P
+Text GLabel 8001 3296 0    50   Input ~ 0
+MIPI0_D1_N
+Text GLabel 9121 2996 2    50   Input ~ 0
+MIPI0_D2_N
+Text GLabel 8011 2896 0    50   Input ~ 0
+MIPI0_D2_P
+Text GLabel 9091 2596 2    50   Input ~ 0
+MIPI0_D3_P
+Text GLabel 8011 2696 0    50   Input ~ 0
+MIPI0_D3_N
+$Comp
+L power:+5V #PWR0105
+U 1 1 60EA6452
+P 7901 786
+F 0 "#PWR0105" H 7901 636 50  0001 C CNN
+F 1 "+5V" V 7916 914 50  0000 L CNN
+F 2 "" H 7901 786 50  0001 C CNN
+F 3 "" H 7901 786 50  0001 C CNN
+	1    7901 786 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pi_video_capturer:MIPI_30PIN J3
+U 1 1 60E94F76
+P 8561 2396
+F 0 "J3" V 6994 2396 50  0000 C CNN
+F 1 "MIPI_30PIN" V 7085 2396 50  0000 C CNN
+F 2 "pi_video_capturer:MIPI_30PIN_FPC_0.5mm" H 8561 2396 50  0001 L BNN
+F 3 "" H 8561 2396 50  0001 L BNN
+F 4 "N/A" V 8561 2396 50  0001 C CNN "SuppliersPartNumber"
+	1    8561 2396
+	0    1    1    0   
+$EndComp
+Text Notes 8451 4686 0    197  ~ 0
+MIPI output
+Text Notes 4542 782  0    197  ~ 0
+HDMI to MIPI
+Wire Wire Line
+	6616 3820 6726 3820
+Wire Wire Line
+	6616 3720 6716 3720
+Wire Wire Line
+	6716 3620 6616 3620
+Wire Wire Line
+	6616 3520 6716 3520
+Wire Wire Line
+	6716 3420 6616 3420
+Wire Wire Line
+	6616 3320 6706 3320
+Wire Wire Line
+	6706 3220 6616 3220
+Wire Wire Line
+	6616 3120 6706 3120
+Wire Wire Line
+	6706 3020 6616 3020
+Wire Wire Line
+	6616 2920 6706 2920
+Wire Wire Line
+	6716 2670 6616 2670
+Wire Wire Line
+	6616 2570 6706 2570
+Wire Wire Line
+	6706 2470 6616 2470
+Wire Wire Line
+	6616 2370 6706 2370
+Wire Wire Line
+	6706 2270 6616 2270
+Wire Wire Line
+	6616 2170 6696 2170
+Wire Wire Line
+	6616 2070 6696 2070
+Wire Wire Line
+	6696 1970 6616 1970
+Wire Wire Line
+	6616 1870 6696 1870
+Wire Wire Line
+	6616 1770 6696 1770
+Text GLabel 6726 3820 2    50   Input ~ 0
+MIPI1_CL_N
+Text GLabel 6716 3720 2    50   Input ~ 0
+MIPI1_CL_P
+Text GLabel 6716 3520 2    50   Input ~ 0
+MIPI1_D0_P
+Text GLabel 6716 3620 2    50   Input ~ 0
+MIPI1_D0_N
+Text GLabel 6706 3320 2    50   Input ~ 0
+MIPI1_D1_P
+Text GLabel 6716 3420 2    50   Input ~ 0
+MIPI1_D1_N
+Text GLabel 6706 3220 2    50   Input ~ 0
+MIPI1_D2_N
+Text GLabel 6706 3120 2    50   Input ~ 0
+MIPI1_D2_P
+Text GLabel 6706 3020 2    50   Input ~ 0
+MIPI1_D3_P
+Text GLabel 6706 2920 2    50   Input ~ 0
+MIPI1_D3_N
+Text GLabel 6716 2670 2    50   Input ~ 0
+MIPI0_CL_N
+Text GLabel 6706 2570 2    50   Input ~ 0
+MIPI0_CL_P
+Text GLabel 6706 2370 2    50   Input ~ 0
+MIPI0_D0_P
+Text GLabel 6706 2470 2    50   Input ~ 0
+MIPI0_D0_N
+Text GLabel 6696 2170 2    50   Input ~ 0
+MIPI0_D1_P
+Text GLabel 6706 2270 2    50   Input ~ 0
+MIPI0_D1_N
+Text GLabel 6696 2070 2    50   Input ~ 0
+MIPI0_D2_N
+Text GLabel 6696 1970 2    50   Input ~ 0
+MIPI0_D2_P
+Text GLabel 6696 1870 2    50   Input ~ 0
+MIPI0_D3_P
+Text GLabel 6696 1770 2    50   Input ~ 0
+MIPI0_D3_N
+Wire Wire Line
+	5406 4110 5116 4110
+Connection ~ 5406 4110
+Wire Wire Line
+	5406 4170 5406 4110
+Wire Wire Line
+	5406 4420 5666 4420
+Connection ~ 5406 4420
+Wire Wire Line
+	5406 4370 5406 4420
+Wire Wire Line
+	5236 4420 5406 4420
+Connection ~ 5236 4420
+Wire Wire Line
+	5236 4360 5236 4420
+Wire Wire Line
+	5236 4070 5316 4070
+Connection ~ 5236 4070
+Wire Wire Line
+	5236 4070 5236 4160
+Wire Wire Line
+	5116 4070 5236 4070
+Wire Wire Line
+	5206 4420 5236 4420
+$Comp
+L Device:C_Small C14
+U 1 1 605EEAFD
+P 5406 4270
+F 0 "C14" H 5498 4316 50  0000 L CNN
+F 1 "0.1uF" H 5316 4280 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5406 4270 50  0001 C CNN
+F 3 "~" H 5406 4270 50  0001 C CNN
+F 4 "C1525" H 5406 4270 50  0001 C CNN "SuppliersPartNumber"
+	1    5406 4270
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5206 4420 5026 4420
+Connection ~ 5206 4420
+Wire Wire Line
+	5206 4450 5206 4420
+Wire Wire Line
+	5116 4650 5116 4690
+Connection ~ 5116 4650
+Wire Wire Line
+	5116 4110 5116 4650
+Wire Wire Line
+	5206 4650 5116 4650
+Wire Wire Line
+	4916 4650 4916 4690
+Connection ~ 4916 4650
+Wire Wire Line
+	4966 4650 4916 4650
+Wire Wire Line
+	4966 4420 4776 4420
+Connection ~ 4966 4420
+Wire Wire Line
+	4966 4450 4966 4420
+Wire Wire Line
+	5026 4420 4966 4420
+Connection ~ 5026 4420
+Wire Wire Line
+	5026 4360 5026 4420
+Connection ~ 5016 4020
+Wire Wire Line
+	5026 4020 5016 4020
+Wire Wire Line
+	5026 4160 5026 4020
+Wire Wire Line
+	4776 4130 4516 4130
+Connection ~ 4776 4130
+Wire Wire Line
+	4776 4170 4776 4130
+Wire Wire Line
+	4596 4080 4516 4080
+Connection ~ 4596 4080
+Wire Wire Line
+	4596 4170 4596 4080
+Wire Wire Line
+	4776 4420 4596 4420
+Connection ~ 4776 4420
+Wire Wire Line
+	4776 4370 4776 4420
+Wire Wire Line
+	4596 4370 4596 4420
+Wire Wire Line
+	4596 4420 4416 4420
+Connection ~ 4596 4420
+Wire Wire Line
+	4596 4460 4596 4420
+Wire Wire Line
+	4516 4670 4516 4700
+Connection ~ 4516 4670
+Wire Wire Line
+	4596 4670 4596 4660
+Wire Wire Line
+	4516 4670 4596 4670
+Wire Wire Line
+	4916 4020 4916 4650
+Wire Wire Line
+	4516 4130 4516 4670
+$Comp
+L Device:C_Small C11
+U 1 1 60544B3F
+P 5206 4550
+F 0 "C11" H 5126 4620 50  0000 L CNN
+F 1 "0.1uF" H 5106 4560 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5206 4550 50  0001 C CNN
+F 3 "~" H 5206 4550 50  0001 C CNN
+F 4 "C1525" H 5206 4550 50  0001 C CNN "SuppliersPartNumber"
+	1    5206 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 6053D785
+P 4966 4550
+F 0 "C9" H 4886 4620 50  0000 L CNN
+F 1 "0.1uF" H 4866 4560 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4966 4550 50  0001 C CNN
+F 3 "~" H 4966 4550 50  0001 C CNN
+F 4 "C1525" H 4966 4550 50  0001 C CNN "SuppliersPartNumber"
+	1    4966 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 605293A0
+P 4596 4560
+F 0 "C6" H 4516 4630 50  0000 L CNN
+F 1 "0.1uF" H 4496 4570 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4596 4560 50  0001 C CNN
+F 3 "~" H 4596 4560 50  0001 C CNN
+F 4 "C1525" H 4596 4560 50  0001 C CNN "SuppliersPartNumber"
+	1    4596 4560
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 6051148F
+P 4776 4270
+F 0 "C8" H 4696 4340 50  0000 L CNN
+F 1 "0.1uF" H 4676 4280 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4776 4270 50  0001 C CNN
+F 3 "~" H 4776 4270 50  0001 C CNN
+F 4 "C1525" H 4776 4270 50  0001 C CNN "SuppliersPartNumber"
+	1    4776 4270
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C12
+U 1 1 605087EF
+P 5236 4260
+F 0 "C12" H 5328 4306 50  0000 L CNN
+F 1 "0.1uF" H 5146 4270 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5236 4260 50  0001 C CNN
+F 3 "~" H 5236 4260 50  0001 C CNN
+F 4 "C1525" H 5236 4260 50  0001 C CNN "SuppliersPartNumber"
+	1    5236 4260
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 6050171C
+P 5026 4260
+F 0 "C10" H 5118 4306 50  0000 L CNN
+F 1 "0.1uF" H 4926 4260 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5026 4260 50  0001 C CNN
+F 3 "~" H 5026 4260 50  0001 C CNN
+F 4 "C1525" H 5026 4260 50  0001 C CNN "SuppliersPartNumber"
+	1    5026 4260
+	1    0    0    -1  
+$EndComp
+Connection ~ 5116 4110
+Wire Wire Line
+	5416 4110 5406 4110
+Wire Wire Line
+	5416 3970 5416 4110
+Wire Wire Line
+	5316 3970 5316 4070
+Wire Wire Line
+	5216 4020 5116 4020
+Wire Wire Line
+	5216 3970 5216 4020
+Connection ~ 4916 4020
+Wire Wire Line
+	5016 4020 4916 4020
+Wire Wire Line
+	5016 3970 5016 4020
+Wire Wire Line
+	4916 3970 4916 4020
+Connection ~ 4516 4130
+Wire Wire Line
+	4816 4130 4776 4130
+Wire Wire Line
+	4816 3970 4816 4130
+Wire Wire Line
+	4516 4080 4516 4130
+Connection ~ 4516 4080
+Wire Wire Line
+	4716 4080 4596 4080
+Wire Wire Line
+	4716 3970 4716 4080
+Wire Wire Line
+	4516 4030 4516 4080
+Connection ~ 4516 4030
+Wire Wire Line
+	4616 4030 4516 4030
+Wire Wire Line
+	4616 3970 4616 4030
+Wire Wire Line
+	4516 3970 4516 4030
+$Comp
+L power:+3.3V #PWR013
+U 1 1 6049B8F0
+P 5116 4690
+F 0 "#PWR013" H 5116 4540 50  0001 C CNN
+F 1 "+3.3V" H 5131 4863 50  0000 C CNN
+F 2 "" H 5116 4690 50  0001 C CNN
+F 3 "" H 5116 4690 50  0001 C CNN
+	1    5116 4690
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+1V2 #PWR012
+U 1 1 6049AF21
+P 4916 4690
+F 0 "#PWR012" H 4916 4540 50  0001 C CNN
+F 1 "+1V2" H 4931 4863 50  0000 C CNN
+F 2 "" H 4916 4690 50  0001 C CNN
+F 3 "" H 4916 4690 50  0001 C CNN
+	1    4916 4690
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+1V1 #PWR010
+U 1 1 604991BF
+P 4516 4700
+F 0 "#PWR010" H 4516 4550 50  0001 C CNN
+F 1 "+1V1" H 4531 4873 50  0000 C CNN
+F 2 "" H 4516 4700 50  0001 C CNN
+F 3 "" H 4516 4700 50  0001 C CNN
+	1    4516 4700
+	-1   0    0    1   
+$EndComp
+Connection ~ 6246 4420
+Wire Wire Line
+	6246 4330 6246 4420
+Wire Wire Line
+	5956 4420 6246 4420
+Connection ~ 5956 4420
+Wire Wire Line
+	5666 4420 5956 4420
+Wire Wire Line
+	5956 4330 5956 4420
+Connection ~ 5666 4420
+Wire Wire Line
+	5666 4330 5666 4420
+Wire Wire Line
+	4416 3970 4416 4420
+NoConn ~ 5766 3970
+Wire Wire Line
+	6246 3970 6246 4030
+Wire Wire Line
+	5966 3970 6246 3970
+Wire Wire Line
+	5866 4030 5956 4030
+Wire Wire Line
+	5866 3970 5866 4030
+Wire Wire Line
+	5666 3970 5666 4030
+$Comp
+L Device:C C17
+U 1 1 603EB1BF
+P 6246 4180
+F 0 "C17" H 6131 4134 50  0000 R CNN
+F 1 "0.1uF" H 6336 4180 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6284 4030 50  0001 C CNN
+F 3 "~" H 6246 4180 50  0001 C CNN
+F 4 "C1525" H 6246 4180 50  0001 C CNN "SuppliersPartNumber"
+	1    6246 4180
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 603E517C
+P 5956 4180
+F 0 "C16" H 5841 4134 50  0000 R CNN
+F 1 "0.1uF" H 6056 4180 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5994 4030 50  0001 C CNN
+F 3 "~" H 5956 4180 50  0001 C CNN
+F 4 "C1525" H 5956 4180 50  0001 C CNN "SuppliersPartNumber"
+	1    5956 4180
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 603DA335
+P 5666 4180
+F 0 "C15" H 5551 4134 50  0000 R CNN
+F 1 "0.1uF" H 5776 4180 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5704 4030 50  0001 C CNN
+F 3 "~" H 5666 4180 50  0001 C CNN
+F 4 "C1525" H 5666 4180 50  0001 C CNN "SuppliersPartNumber"
+	1    5666 4180
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5966 1480 5966 1570
+Wire Wire Line
+	5866 1480 5866 1570
+Wire Wire Line
+	5766 1480 5766 1570
+Wire Wire Line
+	5666 1480 5666 1570
+Wire Wire Line
+	5566 1480 5566 1570
+Wire Wire Line
+	5466 1480 5466 1570
+Wire Wire Line
+	5366 1480 5366 1570
+Text GLabel 5966 1480 1    50   Input ~ 0
+HDMI1_A_SCK
+Text GLabel 5866 1480 1    50   Input ~ 0
+HDMI1_A_WFS
+Text GLabel 5766 1480 1    50   Input ~ 0
+HDMI1_A_SD3
+Text GLabel 5666 1480 1    50   Input ~ 0
+HDMI1_A_SD2
+Text GLabel 5566 1480 1    50   Input ~ 0
+HDMI1_A_SD1
+Text GLabel 5466 1480 1    50   Input ~ 0
+HDMI1_A_SD0
+Text GLabel 5366 1480 1    50   Input ~ 0
+HDMI1_A_OSCK
+Wire Wire Line
+	4816 1570 4816 1430
+Text GLabel 4816 1430 1    50   Input ~ 0
+CLK_48MHz
+Wire Wire Line
+	4716 1570 4716 1490
+$Comp
+L power:+5VA #PWR0104
+U 1 1 6043658B
+P 4166 3470
+F 0 "#PWR0104" H 4166 3320 50  0001 C CNN
+F 1 "+5VA" V 4181 3597 50  0000 L CNN
+F 2 "" H 4166 3470 50  0001 C CNN
+F 3 "" H 4166 3470 50  0001 C CNN
+	1    4166 3470
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3966 3370 4166 3370
+Wire Wire Line
+	4166 3270 3966 3270
+Wire Wire Line
+	3966 3170 4166 3170
+Wire Wire Line
+	3966 3070 4166 3070
+Wire Wire Line
+	6456 4520 6456 4505
+$Comp
+L power:GND #PWR03
+U 1 1 6030B12B
+P 6456 4520
+F 0 "#PWR03" H 6456 4270 50  0001 C CNN
+F 1 "GND" H 6461 4347 50  0000 C CNN
+F 2 "" H 6456 4520 50  0001 C CNN
+F 3 "" H 6456 4520 50  0001 C CNN
+	1    6456 4520
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4516 1570
+Wire Wire Line
+	4166 2870 3991 2870
+Wire Wire Line
+	3991 2770 4166 2770
+Wire Wire Line
+	3991 2670 4166 2670
+Wire Wire Line
+	4166 2570 3991 2570
+Wire Wire Line
+	3991 2470 4166 2470
+Wire Wire Line
+	4166 2370 3991 2370
+Wire Wire Line
+	4166 2270 3991 2270
+Wire Wire Line
+	3991 2170 4166 2170
+$Comp
+L Device:R R1
+U 1 1 60274420
+P 4016 2970
+F 0 "R1" V 3947 3020 50  0000 L CNN
+F 1 "2K" V 4016 2920 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3946 2970 50  0001 C CNN
+F 3 "~" H 4016 2970 50  0001 C CNN
+F 4 "C4109" V 4016 2970 50  0001 C CNN "SuppliersPartNumber"
+	1    4016 2970
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR01
+U 1 1 602708D8
+P 3866 2970
+F 0 "#PWR01" H 3866 2820 50  0001 C CNN
+F 1 "+3.3V" V 3881 3098 50  0000 L CNN
+F 2 "" H 3866 2970 50  0001 C CNN
+F 3 "" H 3866 2970 50  0001 C CNN
+	1    3866 2970
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3966 3370 0    50   Input ~ 0
+HDMI1_HPD
+Text GLabel 3966 3170 0    50   Input ~ 0
+HDMI1_SDA
+Text GLabel 3966 3070 0    50   Input ~ 0
+HDMI1_SCL
+Text GLabel 3966 3270 0    50   Input ~ 0
+HDMI1_CEC
+Text GLabel 3991 2770 0    50   Input ~ 0
+HDMI1_CL_N
+Text GLabel 3991 2870 0    50   Input ~ 0
+HDMI1_CL_P
+Text GLabel 3991 2170 0    50   Input ~ 0
+HDMI1_D0_N
+Text GLabel 3991 2270 0    50   Input ~ 0
+HDMI1_D0_P
+Text GLabel 3991 2370 0    50   Input ~ 0
+HDMI1_D1_N
+Text GLabel 3991 2470 0    50   Input ~ 0
+HDMI1_D1_P
+Text GLabel 3991 2570 0    50   Input ~ 0
+HDMI1_D2_N
+Text GLabel 3991 2670 0    50   Input ~ 0
+HDMI1_D2_P
+Wire Notes Line
+	3476 527  3476 4922
+Wire Notes Line
+	3476 4922 7272 4922
+Wire Notes Line
+	7272 4922 7272 527 
+Wire Notes Line
+	7272 527  3474 527 
+Wire Notes Line
+	7314 527  7314 4754
+Wire Notes Line
+	7314 4754 11200 4754
+Wire Notes Line
+	11200 4754 11200 527 
+Wire Notes Line
+	11200 527  7313 527 
+Wire Notes Line
+	7315 4796 7315 6480
+Wire Notes Line
+	7315 6480 9384 6480
+Wire Notes Line
+	9384 6480 9384 4796
+Wire Notes Line
+	9384 4796 7315 4796
+Wire Wire Line
+	928  5386 908  5386
+Wire Wire Line
+	1168 5386 928  5386
+Connection ~ 928  5386
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 62189423
+P 928 5386
+F 0 "#FLG0103" H 928 5461 50  0001 C CNN
+F 1 "PWR_FLAG" H 928 5559 50  0000 C CNN
+F 2 "" H 928 5386 50  0001 C CNN
+F 3 "~" H 928 5386 50  0001 C CNN
+	1    928  5386
+	-1   0    0    1   
+$EndComp
+Connection ~ 2658 5386
+Text Notes 1828 7256 0    197  ~ 0
+power supply
+Connection ~ 5228 6546
+Wire Wire Line
+	5228 6546 5228 5966
+Wire Wire Line
+	5228 6566 5228 6546
+$Comp
+L power:+1V1 #PWR015
+U 1 1 60CEFF6B
+P 5228 6566
+F 0 "#PWR015" H 5228 6416 50  0001 C CNN
+F 1 "+1V1" H 5243 6739 50  0000 C CNN
+F 2 "" H 5228 6566 50  0001 C CNN
+F 3 "" H 5228 6566 50  0001 C CNN
+	1    5228 6566
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4518 6546 4928 6546
+Connection ~ 4518 6546
+Wire Wire Line
+	4148 6546 4518 6546
+Wire Wire Line
+	4518 6366 4518 6546
+$Comp
+L Device:C_Small C13
+U 1 1 60CB116F
+P 4148 6446
+F 0 "C13" H 4240 6492 50  0000 L CNN
+F 1 "10uf" H 4240 6401 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4148 6446 50  0001 C CNN
+F 3 "~" H 4148 6446 50  0001 C CNN
+F 4 "C15525" H 4148 6446 50  0001 C CNN "SuppliersPartNumber"
+	1    4148 6446
+	1    0    0    -1  
+$EndComp
+Connection ~ 4148 6546
+Wire Wire Line
+	3988 6546 4148 6546
+Wire Wire Line
+	4928 6546 5028 6546
+Connection ~ 4928 6546
+Wire Wire Line
+	4928 6456 4928 6546
+Wire Wire Line
+	3988 6976 3988 6546
+Connection ~ 4928 6206
+Wire Wire Line
+	4928 6206 4928 6166
+Wire Wire Line
+	4818 6206 4928 6206
+Wire Wire Line
+	4818 6066 4818 6206
+$Comp
+L Device:C_Small C18
+U 1 1 60CB1157
+P 5128 6546
+F 0 "C18" V 5088 6616 50  0000 C CNN
+F 1 "10uf" V 5018 6536 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5128 6546 50  0001 C CNN
+F 3 "~" H 5128 6546 50  0001 C CNN
+F 4 "C15525" V 5128 6546 50  0001 C CNN "SuppliersPartNumber"
+	1    5128 6546
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R19
+U 1 1 60CB1151
+P 4928 6356
+F 0 "R19" H 4987 6402 50  0000 L CNN
+F 1 "75k" H 4987 6311 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4928 6356 50  0001 C CNN
+F 3 "~" H 4928 6356 50  0001 C CNN
+F 4 "C25798" H 4928 6356 50  0001 C CNN "SuppliersPartNumber"
+	1    4928 6356
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R20
+U 1 1 60CB114B
+P 4928 6066
+F 0 "R20" H 4987 6112 50  0000 L CNN
+F 1 "33k" H 4987 6021 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4928 6066 50  0001 C CNN
+F 3 "~" H 4928 6066 50  0001 C CNN
+F 4 "C25555" H 4928 6066 50  0001 C CNN "SuppliersPartNumber"
+	1    4928 6066
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 60CB1145
+P 3988 6976
+F 0 "#PWR014" H 3988 6726 50  0001 C CNN
+F 1 "GND" H 3993 6803 50  0000 C CNN
+F 2 "" H 3988 6976 50  0001 C CNN
+F 3 "" H 3988 6976 50  0001 C CNN
+	1    3988 6976
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:AP2127K-ADJ U4
+U 1 1 60CB113D
+P 4518 6066
+F 0 "U4" H 4518 6408 50  0000 C CNN
+F 1 "AP2127K-ADJTRG1" H 4518 6317 50  0000 C CNN
+F 2 "pi_video_capturer:SOT-23-5" H 4518 6391 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP2127.pdf" H 4518 6166 50  0001 C CNN
+F 4 "C96343" H 4518 6066 50  0001 C CNN "SuppliersPartNumber"
+	1    4518 6066
+	1    0    0    -1  
+$EndComp
+Connection ~ 3668 6546
+Wire Wire Line
+	3668 6546 3668 5966
+Wire Wire Line
+	3668 6566 3668 6546
+Wire Wire Line
+	2958 6546 3368 6546
+Connection ~ 2958 6546
+Wire Wire Line
+	2588 6546 2958 6546
+Wire Wire Line
+	2958 6366 2958 6546
+$Comp
+L Device:C_Small C4
+U 1 1 60B81889
+P 2588 6446
+F 0 "C4" H 2680 6492 50  0000 L CNN
+F 1 "10uf" H 2680 6401 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2588 6446 50  0001 C CNN
+F 3 "~" H 2588 6446 50  0001 C CNN
+F 4 "C15525" H 2588 6446 50  0001 C CNN "SuppliersPartNumber"
+	1    2588 6446
+	1    0    0    -1  
+$EndComp
+Connection ~ 2588 6546
+Wire Wire Line
+	2428 6546 2588 6546
+Wire Wire Line
+	3368 6546 3468 6546
+Connection ~ 3368 6546
+Wire Wire Line
+	3368 6456 3368 6546
+Wire Wire Line
+	2428 6976 2428 6546
+Connection ~ 3368 6206
+Wire Wire Line
+	3368 6206 3368 6166
+Wire Wire Line
+	3258 6206 3368 6206
+Wire Wire Line
+	3258 6066 3258 6206
+$Comp
+L Device:C_Small C7
+U 1 1 60B81867
+P 3568 6546
+F 0 "C7" V 3528 6556 50  0000 L CNN
+F 1 "10uf" V 3458 6466 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3568 6546 50  0001 C CNN
+F 3 "~" H 3568 6546 50  0001 C CNN
+F 4 "C15525" V 3568 6546 50  0001 C CNN "SuppliersPartNumber"
+	1    3568 6546
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R17
+U 1 1 60B81861
+P 3368 6356
+F 0 "R17" H 3427 6402 50  0000 L CNN
+F 1 "68k" H 3427 6311 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3368 6356 50  0001 C CNN
+F 3 "~" H 3368 6356 50  0001 C CNN
+F 4 "C36871" H 3368 6356 50  0001 C CNN "SuppliersPartNumber"
+	1    3368 6356
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R18
+U 1 1 60B8185B
+P 3368 6066
+F 0 "R18" H 3427 6112 50  0000 L CNN
+F 1 "33k" H 3427 6021 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3368 6066 50  0001 C CNN
+F 3 "~" H 3368 6066 50  0001 C CNN
+F 4 "C25779" H 3368 6066 50  0001 C CNN "SuppliersPartNumber"
+	1    3368 6066
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 60B81855
+P 2428 6976
+F 0 "#PWR09" H 2428 6726 50  0001 C CNN
+F 1 "GND" H 2433 6803 50  0000 C CNN
+F 2 "" H 2428 6976 50  0001 C CNN
+F 3 "" H 2428 6976 50  0001 C CNN
+	1    2428 6976
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:AP2127K-ADJ U3
+U 1 1 60B8184D
+P 2958 6066
+F 0 "U3" H 2958 6408 50  0000 C CNN
+F 1 "AP2127K-ADJTRG1" H 2958 6317 50  0000 C CNN
+F 2 "pi_video_capturer:SOT-23-5" H 2958 6391 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP2127.pdf" H 2958 6166 50  0001 C CNN
+F 4 "C96343" H 2958 6066 50  0001 C CNN "SuppliersPartNumber"
+	1    2958 6066
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1468 6546 1878 6546
+Connection ~ 1468 6546
+Wire Wire Line
+	1098 6546 1468 6546
+Wire Wire Line
+	1468 6366 1468 6546
+$Comp
+L Device:C_Small C2
+U 1 1 608EE1A9
+P 1098 6446
+F 0 "C2" H 1190 6492 50  0000 L CNN
+F 1 "10uf" H 1190 6401 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1098 6446 50  0001 C CNN
+F 3 "~" H 1098 6446 50  0001 C CNN
+F 4 "C15525" H 1098 6446 50  0001 C CNN "SuppliersPartNumber"
+	1    1098 6446
+	1    0    0    -1  
+$EndComp
+Connection ~ 1098 6546
+Wire Wire Line
+	938  6546 1098 6546
+Wire Wire Line
+	1878 6546 1978 6546
+Connection ~ 1878 6546
+Wire Wire Line
+	938  6976 938  6546
+Wire Wire Line
+	2178 6546 2178 6566
+Connection ~ 2178 6546
+Wire Wire Line
+	2178 5966 2178 6546
+Connection ~ 1878 6206
+Wire Wire Line
+	1878 6206 1878 6256
+Wire Wire Line
+	1768 6206 1878 6206
+Wire Wire Line
+	1768 6066 1768 6206
+$Comp
+L power:+1V2 #PWR011
+U 1 1 6099D2E2
+P 3668 6566
+F 0 "#PWR011" H 3668 6416 50  0001 C CNN
+F 1 "+1V2" H 3683 6739 50  0000 C CNN
+F 2 "" H 3668 6566 50  0001 C CNN
+F 3 "" H 3668 6566 50  0001 C CNN
+	1    3668 6566
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR08
+U 1 1 6099CB5B
+P 2178 6566
+F 0 "#PWR08" H 2178 6416 50  0001 C CNN
+F 1 "+3.3V" H 2193 6739 50  0000 C CNN
+F 2 "" H 2178 6566 50  0001 C CNN
+F 3 "" H 2178 6566 50  0001 C CNN
+	1    2178 6566
+	-1   0    0    1   
+$EndComp
+Connection ~ 1168 5386
+$Comp
+L Device:C_Small C3
+U 1 1 608EE197
+P 2078 6546
+F 0 "C3" V 2038 6616 50  0000 C CNN
+F 1 "10uf" V 1978 6546 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2078 6546 50  0001 C CNN
+F 3 "~" H 2078 6546 50  0001 C CNN
+F 4 "C15525" V 2078 6546 50  0001 C CNN "SuppliersPartNumber"
+	1    2078 6546
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R15
+U 1 1 608CDCA8
+P 1878 6356
+F 0 "R15" H 1937 6402 50  0000 L CNN
+F 1 "22k" H 1937 6311 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1878 6356 50  0001 C CNN
+F 3 "~" H 1878 6356 50  0001 C CNN
+F 4 "C25768" H 1878 6356 50  0001 C CNN "SuppliersPartNumber"
+	1    1878 6356
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R16
+U 1 1 608CD26D
+P 1878 6066
+F 0 "R16" H 1937 6112 50  0000 L CNN
+F 1 "68k" H 1937 6021 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1878 6066 50  0001 C CNN
+F 3 "~" H 1878 6066 50  0001 C CNN
+F 4 "C36871" H 1878 6066 50  0001 C CNN "SuppliersPartNumber"
+	1    1878 6066
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 60881EB8
+P 938 6976
+F 0 "#PWR07" H 938 6726 50  0001 C CNN
+F 1 "GND" H 943 6803 50  0000 C CNN
+F 2 "" H 938 6976 50  0001 C CNN
+F 3 "" H 938 6976 50  0001 C CNN
+	1    938  6976
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:AP2127K-ADJ U2
+U 1 1 60839B43
+P 1468 6066
+F 0 "U2" H 1468 6408 50  0000 C CNN
+F 1 "AP2127K-ADJTRG1" H 1468 6317 50  0000 C CNN
+F 2 "pi_video_capturer:SOT-23-5" H 1468 6391 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP2127.pdf" H 1468 6166 50  0001 C CNN
+F 4 "C96343" H 1468 6066 50  0001 C CNN "SuppliersPartNumber"
+	1    1468 6066
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR06
+U 1 1 60831514
+P 908 5386
+F 0 "#PWR06" H 908 5236 50  0001 C CNN
+F 1 "+5V" V 923 5514 50  0000 L CNN
+F 2 "" H 908 5386 50  0001 C CNN
+F 3 "" H 908 5386 50  0001 C CNN
+	1    908  5386
+	0    -1   -1   0   
+$EndComp
+Text Notes 1458 6496 0    118  ~ 0
+3.3V
+Text Notes 2958 6496 0    118  ~ 0
+1.2V
+Text Notes 4518 6466 0    118  ~ 0
+1.1V
+Wire Notes Line
+	585  5253 585  7376
+Wire Notes Line
+	585  7376 5347 7376
+Wire Notes Line
+	5347 7376 5347 5252
+Wire Notes Line
+	5347 5252 585  5252
+NoConn ~ 10541 1401
+Wire Wire Line
+	2295 2495 2295 2845
+Text GLabel 1155 1920 0    50   Input ~ 0
+HDMI1_CL_N
+Text GLabel 1155 1720 0    50   Input ~ 0
+HDMI1_D0_N
+Text GLabel 1155 1620 0    50   Input ~ 0
+HDMI1_D0_P
+Text GLabel 1155 1820 0    50   Input ~ 0
+HDMI1_CL_P
+Text Notes 8311 4316 0    118  ~ 0
+MIPI 1
+$Comp
+L power:GND #PWR0109
+U 1 1 61552560
+P 9341 4341
+F 0 "#PWR0109" H 9341 4091 50  0001 C CNN
+F 1 "GND" V 9346 4213 50  0000 R CNN
+F 2 "" H 9341 4341 50  0001 C CNN
+F 3 "" H 9341 4341 50  0001 C CNN
+	1    9341 4341
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9341 4341 9651 4341
+Wire Wire Line
+	1330 3175 1330 3265
+Wire Wire Line
+	1330 3265 1290 3265
+Wire Wire Line
+	1425 3175 1425 3265
+Wire Wire Line
+	1425 3265 1330 3265
+Connection ~ 1330 3265
+Wire Wire Line
+	1330 2875 1330 2645
+Wire Wire Line
+	1425 2875 1425 2745
+Connection ~ 1330 2645
+Connection ~ 1425 2745
+Wire Wire Line
+	1095 2745 1425 2745
+Wire Wire Line
+	1095 2645 1330 2645
+Wire Wire Line
+	10441 4101 10621 4101
+Wire Wire Line
+	10621 4001 10621 4101
+Connection ~ 10621 4101
+Wire Wire Line
+	10621 4101 10621 4341
+Wire Wire Line
+	8861 4096 9041 4096
+Wire Wire Line
+	9041 3996 9041 4096
+Connection ~ 9041 4096
+Wire Wire Line
+	9041 4096 9041 4336
+$Comp
+L Connector:Conn_01x09_Female J2
+U 1 1 6030558F
+P 1740 3950
+F 0 "J2" H 1768 3976 50  0000 L CNN
+F 1 "Conn_01x09_Female" H 1768 3885 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 1740 3950 50  0001 C CNN
+F 3 "~" H 1740 3950 50  0001 C CNN
+	1    1740 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 603B8E6F
+P 4716 1490
+F 0 "#PWR0102" H 4716 1240 50  0001 C CNN
+F 1 "GND" H 4721 1317 50  0000 C CNN
+F 2 "" H 4716 1490 50  0001 C CNN
+F 3 "" H 4716 1490 50  0001 C CNN
+	1    4716 1490
+	-1   0    0    1   
+$EndComp
+Text GLabel 1540 4350 0    50   Input ~ 0
+INT
+Text GLabel 4617 1199 1    50   Input ~ 0
+INT
+Wire Wire Line
+	10541 1201 10541 786 
+Wire Wire Line
+	10541 786  9741 786 
+Connection ~ 8961 786 
+Wire Wire Line
+	9741 1101 9741 786 
+Connection ~ 9741 786 
+Wire Wire Line
+	9741 786  8961 786 
+$Comp
+L pi_video_capturer:HDMI J1
+U 1 1 604837B5
+P 2920 1695
+F 0 "J1" H 3153 1741 50  0000 L CNN
+F 1 "HDMI" H 3153 1650 50  0000 L CNN
+F 2 "pi_video_capturer:TE_5-1903015-5" H 2920 1695 50  0001 L BNN
+F 3 "" H 2920 1695 50  0001 L BNN
+F 4 "C111617" H 2920 1695 50  0001 L BNN "SuppliersPartNumber"
+	1    2920 1695
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1168 5386 1168 5876
+Connection ~ 1168 5966
+Wire Wire Line
+	1168 5966 1168 6066
+Wire Wire Line
+	1098 5876 1168 5876
+Wire Wire Line
+	1098 5876 1098 6346
+Connection ~ 1168 5876
+Wire Wire Line
+	1168 5876 1168 5966
+Wire Wire Line
+	1168 5386 2658 5386
+Wire Wire Line
+	2658 5386 2658 5888
+Connection ~ 2658 5966
+Wire Wire Line
+	2658 5966 2658 6066
+Wire Wire Line
+	2588 6346 2588 5888
+Wire Wire Line
+	2588 5888 2658 5888
+Connection ~ 2658 5888
+Wire Wire Line
+	2658 5888 2658 5966
+Wire Wire Line
+	2658 5386 4218 5386
+Wire Wire Line
+	4218 6066 4218 5966
+Connection ~ 4218 5966
+Wire Wire Line
+	4218 5386 4218 5887
+Wire Wire Line
+	4148 6346 4148 5888
+Wire Wire Line
+	4148 5888 4219 5888
+Wire Wire Line
+	4219 5888 4219 5887
+Wire Wire Line
+	4219 5887 4218 5887
+Connection ~ 4218 5887
+Wire Wire Line
+	4218 5887 4218 5966
+Wire Wire Line
+	1170 695  2520 695 
+Wire Wire Line
+	1170 795  2345 795 
+Wire Wire Line
+	1670 1445 1820 1445
+Wire Wire Line
+	1170 895  2295 895 
+Wire Wire Line
+	1170 995  2220 995 
+$Comp
+L pi_video_capturer:ESD0524P D1
+U 1 1 602252BD
+P 1820 995
+F 0 "D1" V 1520 920 50  0000 C CNN
+F 1 "ESD0524P" V 2020 1045 50  0000 C CNN
+F 2 "pi_video_capturer:Diodes_UDFN-10_1.0x2.5mm_P0.5mm" H 1820 995 50  0001 C CNN
+F 3 "" H 1820 995 50  0001 C CNN
+F 4 "C840786" V 1820 995 50  0001 C CNN "SuppliersPartNumber"
+	1    1820 995 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1155 1620 2070 1620
+Wire Wire Line
+	1155 1720 2145 1720
+Wire Wire Line
+	1595 2370 1995 2370
+Wire Wire Line
+	1155 1820 2220 1820
+Wire Wire Line
+	1155 1920 2295 1920
+$Comp
+L pi_video_capturer:ESD0524P D2
+U 1 1 602267AA
+P 1745 1920
+F 0 "D2" V 1445 1820 50  0000 C CNN
+F 1 "ESD0524P" V 1945 1970 50  0000 C CNN
+F 2 "pi_video_capturer:Diodes_UDFN-10_1.0x2.5mm_P0.5mm" H 1745 1920 50  0001 C CNN
+F 3 "" H 1745 1920 50  0001 C CNN
+F 4 "C840786" V 1745 1920 50  0001 C CNN "SuppliersPartNumber"
+	1    1745 1920
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1674 3295 2395 3295
+Wire Wire Line
+	1095 2545 2095 2545
+Wire Wire Line
+	1330 2645 2170 2645
+Wire Wire Line
+	1425 2745 2245 2745
+Wire Wire Line
+	1305 2845 2295 2845
+$Comp
+L pi_video_capturer:ESD0524P D3
+U 1 1 6023471E
+P 1824 2845
+F 0 "D3" V 1524 2745 50  0000 C CNN
+F 1 "ESD0524P" V 2024 2895 50  0000 C CNN
+F 2 "pi_video_capturer:Diodes_UDFN-10_1.0x2.5mm_P0.5mm" H 1824 2845 50  0001 C CNN
+F 3 "" H 1824 2845 50  0001 C CNN
+F 4 "C840786" V 1824 2845 50  0001 C CNN "SuppliersPartNumber"
+	1    1824 2845
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1768 5966 1878 5966
+Connection ~ 1878 5966
+Wire Wire Line
+	1878 5966 2178 5966
+Wire Wire Line
+	1878 6166 1878 6206
+Wire Wire Line
+	1878 6456 1878 6546
+Wire Wire Line
+	3258 5966 3368 5966
+Connection ~ 3368 5966
+Wire Wire Line
+	3368 5966 3668 5966
+Wire Wire Line
+	3368 6206 3368 6256
+Wire Wire Line
+	4818 5966 4928 5966
+Connection ~ 4928 5966
+Wire Wire Line
+	4928 5966 5228 5966
+Wire Wire Line
+	4928 6206 4928 6256
+$Comp
+L power:+1V8 #PWR016
+U 1 1 605CF496
+P 5566 4504
+F 0 "#PWR016" H 5566 4354 50  0001 C CNN
+F 1 "+1V8" H 5581 4677 50  0000 C CNN
+F 2 "" H 5566 4504 50  0001 C CNN
+F 3 "" H 5566 4504 50  0001 C CNN
+	1    5566 4504
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5116 4020 5116 4070
+Connection ~ 5116 4070
+Wire Wire Line
+	5116 4070 5116 4110
+Wire Wire Line
+	5566 4504 5566 3970
+$Comp
+L power:+1V8 #PWR017
+U 1 1 60627A62
+P 9049 1595
+F 0 "#PWR017" H 9049 1445 50  0001 C CNN
+F 1 "+1V8" H 9064 1768 50  0000 C CNN
+F 2 "" H 9049 1595 50  0001 C CNN
+F 3 "" H 9049 1595 50  0001 C CNN
+	1    9049 1595
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8961 1596 9049 1596
+Wire Wire Line
+	9049 1596 9049 1595
+$Comp
+L Device:R R2
+U 1 1 605865E5
+P 4616 1420
+F 0 "R2" H 4462 1462 50  0000 L CNN
+F 1 "10K" H 4411 1366 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4546 1420 50  0001 C CNN
+F 3 "~" H 4616 1420 50  0001 C CNN
+F 4 "C25744" H 4616 1420 50  0001 C CNN "SuppliersPartNumber"
+	1    4616 1420
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4616 1199 4617 1199
+Wire Wire Line
+	4616 1199 4616 1270
+$Comp
+L Device:R R10
+U 1 1 60338A20
+P 1330 3025
+F 0 "R10" H 1400 3071 50  0001 L CNN
+F 1 "47k" V 1330 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1260 3025 50  0001 C CNN
+F 3 "~" H 1330 3025 50  0001 C CNN
+F 4 "C25792" H 1330 3025 50  0001 C CNN "SuppliersPartNumber"
+	1    1330 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L pi_video_capturer:TC358840XBG U1
+U 1 1 602492B0
+P 5366 2720
+F 0 "U1" H 5366 2640 50  0000 C CNN
+F 1 "TC358840XBG" H 5366 2720 50  0000 C CNN
+F 2 "pi_video_capturer:BGA80C65P10X10_700X700X100N" H 5466 2770 50  0001 C CNN
+F 3 "" H 5466 2770 50  0001 C CNN
+	1    5366 2720
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

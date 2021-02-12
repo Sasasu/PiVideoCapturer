@@ -1,0 +1,12 @@
+gerber/
+./fp-info-cache
+./fp-lib-table
+./sym-lib-table
+
+./PiVideoCapturer.xml
+./PiVideoCapturer.net
+./PiVideoCapturer-cache.lib
+./pi_video_capturer.bck
+./pi_video_capturer.dcm
+./PiVideoCapturer-cache.lib
+./datasheet

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name pi_video_capturer)(type Legacy)(uri ${KIPRJMOD}/pi_video_capturer.lib)(options "")(descr ""))
+)
