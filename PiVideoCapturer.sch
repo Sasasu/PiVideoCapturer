@@ -474,7 +474,7 @@ F 0 "J4" V 8574 2401 50  0000 C CNN
 F 1 "MIPI_30PIN" V 8665 2401 50  0000 C CNN
 F 2 "pi_video_capturer:MIPI_30PIN_FPC_0.5mm" H 10141 2401 50  0001 L BNN
 F 3 "" H 10141 2401 50  0001 L BNN
-F 4 "N/A" V 10141 2401 50  0001 C CNN "SuppliersPartNumber"
+F 4 " C11078" V 10141 2401 50  0001 C CNN "SuppliersPartNumber"
 	1    10141 2401
 	0    1    1    0   
 $EndComp
@@ -596,7 +596,7 @@ F 0 "J3" V 6994 2396 50  0000 C CNN
 F 1 "MIPI_30PIN" V 7085 2396 50  0000 C CNN
 F 2 "pi_video_capturer:MIPI_30PIN_FPC_0.5mm" H 8561 2396 50  0001 L BNN
 F 3 "" H 8561 2396 50  0001 L BNN
-F 4 "N/A" V 8561 2396 50  0001 C CNN "SuppliersPartNumber"
+F 4 " C11078" V 8561 2396 50  0001 C CNN "SuppliersPartNumber"
 	1    8561 2396
 	0    1    1    0   
 $EndComp
