@@ -1,6 +1,6 @@
 # PiVideoCapturer
 
-A voideo capturer using TC358840XBG and arm SoC
+A video capturer using TC358840XBG and arm SoC
 
 ![](./pcb.jpg)
 
