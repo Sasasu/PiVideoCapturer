@@ -11,3 +11,7 @@ Also a [DTS example](https://github.com/Sasasu/kernel/commit/191d50bea6500b790de
 And a [debugging driver](https://github.com/Sasasu/kernel/blob/nanopi4-linux-v4.4.y/drivers/media/i2c/tc358840.c) for RK3399 with kernel 4.4.
 
 License: GPLv3
+
+----
+
+TC358840XBG is completely EOL now. I personally recommend use RK3588 instead, RK3588 has a HDMI IN port.
